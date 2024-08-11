@@ -1,0 +1,46 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --black: black;
+  --gray: #343434;
+  --white: #F3F4F6;
+  --clip-orange: #fc4c02;
+  --clip-orange-clear: #ffc6b2;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+html{
+  background-color: var(--black);
+}
+
+body{
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+banner-component{
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
