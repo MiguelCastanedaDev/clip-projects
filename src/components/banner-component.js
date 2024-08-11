@@ -66,6 +66,10 @@ export class BannerComponent extends LitElement {
             height: 32px;
           }
         }
+        & .btn-primary{
+          background-color: var(--clip-orange-clear);
+          color: var(--clip-orange);
+        }
     
         & .btn-secondary{
           /*background-color: var(--clip-orange-clear);*/
@@ -105,7 +109,11 @@ export class BannerComponent extends LitElement {
         <div class="wrapper-info">
           <h1>Do Somethings incredible now</h1>
           <p>Your support can make a world of difference for animals in need. By donating today, you help rescue, rehabilitate, and provide loving homes to animals who deserve a second chance. Together, we can give them the life they truly deserve. </p>
-          <a class="btn-secondary" href="https://pago.clip.mx/suscripcion/6b25994f-1fc0-41de-ab9c-1c5663e15a26">  
+          <a class="btn-primary" href="https://pago.clip.mx/suscripcion/6b25994f-1fc0-41de-ab9c-1c5663e15a26">  
+            <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
+            Subscribe with Clip $100/Month
+          </a>
+          <a class="btn-secondary" href="https://link.clip.mx/@tiendastestmiguel/pagar">
             <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
             Donate with Clip
           </a>
