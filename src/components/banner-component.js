@@ -49,32 +49,37 @@ export class BannerComponent extends LitElement {
           animation: fadeInUp 1s ease-in-out forwards;
         }
 
-        & a{
-          border-radius: .5rem;
-          padding: 20px 32px;
-          font-weight: 600;
-          text-decoration: none;
+        & .wrapper-btn{
           display: flex;
-          align-items: center;
           gap: 16px;
-          width: 185px;
-          opacity: 0; /* Inicia con opacidad 0 */
-          animation: fadeInUp 1s ease-in-out forwards;
-    
-          & img{
-            width: 32px;
-            height: 32px;
+          flex-wrap: wrap;
+          & a{
+            border-radius: .5rem;
+            padding: 20px 32px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 185px;
+            opacity: 0; /* Inicia con opacidad 0 */
+            animation: fadeInUp 1s ease-in-out forwards;
+      
+            & img{
+              width: 32px;
+              height: 32px;
+            }
           }
-        }
-        & .btn-primary{
-          background-color: var(--clip-orange-clear);
-          color: var(--clip-orange);
-        }
-    
-        & .btn-secondary{
-          /*background-color: var(--clip-orange-clear);*/
-          color: var(--clip-orange);
-          border: 1px solid var(--clip-orange)
+          & .btn-primary{
+            background-color: var(--clip-orange-clear);
+            color: var(--clip-orange);
+          }
+      
+          & .btn-secondary{
+            /*background-color: var(--clip-orange-clear);*/
+            color: var(--clip-orange);
+            border: 1px solid var(--clip-orange)
+          }
         }
       } 
     }
@@ -109,14 +114,16 @@ export class BannerComponent extends LitElement {
         <div class="wrapper-info">
           <h1>Do Somethings incredible now</h1>
           <p>Your support can make a world of difference for animals in need. By donating today, you help rescue, rehabilitate, and provide loving homes to animals who deserve a second chance. Together, we can give them the life they truly deserve. </p>
-          <a class="btn-primary" href="https://pago.clip.mx/suscripcion/6b25994f-1fc0-41de-ab9c-1c5663e15a26">  
-            <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
-            Subscribe with Clip $100/Month
-          </a>
-          <a class="btn-secondary" href="https://link.clip.mx/@tiendastestmiguel/pagar">
-            <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
-            Donate with Clip
-          </a>
+          <div class="wrapper-btn">
+            <a class="btn-primary" href="https://pago.clip.mx/suscripcion/6b25994f-1fc0-41de-ab9c-1c5663e15a26">  
+              <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
+              Subscribe with Clip $100/Month
+            </a>
+            <a class="btn-secondary" href="https://link.clip.mx/@tiendastestmiguel/pagar">
+              <img src="https://cdn.prod.website-files.com/640a110ff475260ce6551685/640b3788ce1a575625fd9f45_Logo-Clip.svg"/>
+              Donate with Clip
+            </a>
+          </div>
         </div>
       </div>
     `
